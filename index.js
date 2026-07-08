@@ -24,8 +24,7 @@ const PORT = 3001;
 mongoose
   .connect(process.env.MONGO_URL, {
     dbName: "abc",
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    
   })
   .then(() => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
